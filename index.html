@@ -772,7 +772,7 @@
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
         <div style="background:white;border-radius:10px;padding:12px 14px;border:1px solid var(--morandi-sage-light);">
           <div style="font-size:11px;color:var(--morandi-sage);font-weight:600;margin-bottom:4px;">✈ 航班</div>
-          <div style="font-size:13px;font-weight:500;">去：CI280 KHH→NRT</div>
+          <div style="font-size:13px;font-weight:500;">去：IT280 KHH→NRT</div>
           <div style="font-size:12px;color:var(--ink-muted);">07/01 08:05 出發</div>
           <div style="font-size:13px;font-weight:500;margin-top:4px;">回：CI127 NRT→KHH</div>
           <div style="font-size:12px;color:var(--ink-muted);">07/08 18:35 出發</div>
@@ -1102,7 +1102,7 @@
             <div class="card-header">
               <div>
                 <div class="card-title">✈️ 機票資訊</div>
-                <div class="card-subtitle">中華航空・高雄 ⇄ 成田</div>
+                <div class="card-subtitle">虎航 IT280（去）・華航 CI127（回）・易遊網 ORD0028700297</div>
               </div>
               <div style="display:flex;gap:6px;align-items:center;">
                 <span class="card-type-badge badge-flight">航班</span>
@@ -1110,10 +1110,47 @@
               </div>
             </div>
             <div class="card-detail">
-              <div class="info-grid">
-                <div class="info-block"><div class="info-block-label">去程</div><div class="info-block-value"><strong>CI280</strong>　KHH 08:05 → NRT 12:40<br>07/01（二）・建議 06:35 抵達機場</div></div>
-                <div class="info-block"><div class="info-block-label">回程</div><div class="info-block-value"><strong>CI127</strong>　NRT 18:35 → KHH 21:40<br>07/08（三）</div></div>
-                <div class="info-block" style="grid-column:span 2;"><div class="info-block-label">報到 & 行李</div><div class="info-block-value">報到：起飛前 90 分鐘・含未成年請走家庭通道<br>托運：每人 23kg × 1・手提 7kg<br>液體 100ml 以下入夾鏈袋（1L）・鋰電備用電源不超過 160Wh</div></div>
+              <div style="display:flex;flex-direction:column;gap:10px;">
+
+                <!-- 去程 -->
+                <div style="background:var(--morandi-slate-pale);border:1px solid var(--morandi-slate-light);border-radius:var(--radius-sm);padding:12px;">
+                  <div style="font-weight:600;color:#4a3070;font-size:13px;margin-bottom:6px;">✈ 去程　07/01（三）</div>
+                  <div class="info-grid">
+                    <div class="info-block"><div class="info-block-label">航班</div><div class="info-block-value"><strong>虎航 IT280</strong></div></div>
+                    <div class="info-block"><div class="info-block-label">時間</div><div class="info-block-value">KHH 08:05 → NRT 12:40<br><span style="font-size:11px;color:var(--ink-muted);">建議 06:35 抵達小港機場</span></div></div>
+                    <div class="info-block"><div class="info-block-label">購票</div><div class="info-block-value">易遊網 <strong>ORD0028700297</strong></div></div>
+                    <div class="info-block"><div class="info-block-label">行李</div><div class="info-block-value">托運大行李 <strong>2 件</strong></div></div>
+                  </div>
+                  <div style="margin-top:8px;background:white;border-radius:4px;padding:8px 10px;font-size:12px;line-height:1.9;">
+                    <div style="font-weight:500;color:var(--ink);margin-bottom:2px;">訂位代號</div>
+                    <div>👤 <strong>釩</strong>：<span style="font-family:monospace;font-size:13px;font-weight:700;color:#4a3070;letter-spacing:1px;">E3R46S</span></div>
+                    <div>👨‍👩‍👦 <strong>其他四人</strong>：<span style="font-family:monospace;font-size:13px;font-weight:700;color:#4a3070;letter-spacing:1px;">Q5K6FC</span></div>
+                  </div>
+                </div>
+
+                <!-- 回程 -->
+                <div style="background:var(--morandi-rose-pale);border:1px solid var(--morandi-rose-light);border-radius:var(--radius-sm);padding:12px;">
+                  <div style="font-weight:600;color:#8a5550;font-size:13px;margin-bottom:6px;">✈ 回程　07/08（三）</div>
+                  <div class="info-grid">
+                    <div class="info-block"><div class="info-block-label">航班</div><div class="info-block-value"><strong>華航 CI127</strong></div></div>
+                    <div class="info-block"><div class="info-block-label">時間</div><div class="info-block-value">NRT 18:35 → KHH 21:40</div></div>
+                    <div class="info-block"><div class="info-block-label">購票</div><div class="info-block-value">易遊網 <strong>ORD0028700297</strong></div></div>
+                    <div class="info-block"><div class="info-block-label">行李</div><div class="info-block-value">托運大行李 <strong>5 件</strong></div></div>
+                  </div>
+                  <div style="margin-top:8px;background:white;border-radius:4px;padding:8px 10px;font-size:12px;line-height:1.9;">
+                    <div style="font-weight:500;color:var(--ink);margin-bottom:2px;">訂位代號</div>
+                    <div>👨‍👩‍👦 <strong>全員（5人）</strong>：<span style="font-family:monospace;font-size:13px;font-weight:700;color:#8a5550;letter-spacing:1px;">CJVEII</span></div>
+                  </div>
+                </div>
+
+                <!-- 通用行李注意 -->
+                <div style="background:#f8f5ef;border-radius:var(--radius-sm);padding:10px 12px;font-size:12px;color:var(--ink-secondary);line-height:1.8;">
+                  <div style="font-weight:500;color:var(--ink);margin-bottom:3px;">🧳 行李注意事項</div>
+                  <div>• 含未成年請走家庭通道・起飛前 90 分鐘報到</div>
+                  <div>• 托運每件 23kg 上限・手提 7kg</div>
+                  <div>• 液體 100ml 以下裝夾鏈袋（1L）・鋰電備用電源 ≤160Wh</div>
+                </div>
+
               </div>
             </div>
           </div>
@@ -3244,6 +3281,20 @@
                 <div style="font-weight:600;color:#7a6840;margin-bottom:4px;">💳 付款資訊</div>
                 <div style="display:flex;justify-content:space-between;font-weight:600;color:#8b1a1a;"><span>總金額</span><span>JPY 136,206</span></div>
                 <div style="font-size:12px;color:var(--ink-muted);margin-top:2px;">到店付款・1 泊 2 食プラン</div>
+              </div>
+
+              <!-- 大眾湯池 -->
+              <div style="background:var(--morandi-lavender-pale);border:1px solid var(--morandi-lavender-light);border-radius:var(--radius-sm);padding:10px 12px;margin-top:8px;font-size:12px;color:var(--ink-secondary);line-height:1.9;">
+                <div style="font-weight:600;color:var(--morandi-lavender);margin-bottom:6px;">♨ 大眾湯池・使用說明</div>
+                <div style="margin-bottom:4px;">🕐 <strong>開放時間</strong>　下午 15:00–24:00　／　清晨 05:00–09:30</div>
+                <div style="background:white;border-radius:4px;padding:8px 10px;margin-bottom:6px;">
+                  <div style="font-weight:500;color:var(--ink);margin-bottom:3px;">🏔 景觀對稱・無需交換</div>
+                  <div>男湯與女湯（室內「銘石風呂」+ 頂樓露天「富士見の湯」）格局相似、面向一致——兩邊都能欣賞到完整的富士山與河口湖絕景，不需特地安排交換。</div>
+                </div>
+                <div style="background:white;border-radius:4px;padding:8px 10px;">
+                  <div style="font-weight:500;color:var(--ink);margin-bottom:3px;">👨‍👦 泡湯彈性安排</div>
+                  <div>爸爸可帶三個男孩隨時前往男湯，在 <strong>15:00–24:00</strong> 或 <strong>05:00–09:30</strong> 的任何時段皆可，行程完全不需遷就浴場切換時間。媽媽也能在同個時段安心前往女湯，享受專屬放鬆時光。</div>
+                </div>
               </div>
 
             </div>
